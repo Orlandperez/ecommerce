@@ -30,7 +30,10 @@ export default function Header() {
         <ul>
             {
                 data.map((p, i)=> 
-                <li key={i}>{p.nombre}</li>
+                <div key={i}>
+                    <li >{p.nombre}</li>
+                    <img style={{width:'160px'}} src={p.imagen}/>
+                </div>
                 )
             }
         </ul>
