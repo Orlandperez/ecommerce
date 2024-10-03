@@ -1,0 +1,305 @@
+{
+  "bebidas": [
+    {
+      "id": 1,
+      "nombre": "Cerveza",
+      "tipo": "Cerveza",
+      "alcohol": 5.0,
+      "descripcion": "Bebida fermentada a base de cebada.",
+      "precio": 5.0,
+      "stock": 100,
+      "imagen": "https://cdn.pixabay.com/photo/2016/03/11/16/24/beer-1253445_1280.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Vino Tinto",
+      "tipo": "Vino",
+      "alcohol": 12.0,
+      "descripcion": "Vino hecho de uvas rojas.",
+      "precio": 15.0,
+      "stock": 50,
+      "imagen": "https://cdn.pixabay.com/photo/2016/08/02/00/01/red-wine-1564911_1280.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Vodka",
+      "tipo": "Licor",
+      "alcohol": 40.0,
+      "descripcion": "Licor destilado de granos o papas.",
+      "precio": 20.0,
+      "stock": 75,
+      "imagen": "https://cdn.pixabay.com/photo/2017/06/22/17/27/vodka-2434585_1280.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Ginebra",
+      "tipo": "Licor",
+      "alcohol": 37.5,
+      "descripcion": "Licor destilado con bayas de enebro.",
+      "precio": 18.0,
+      "stock": 60,
+      "imagen": "https://cdn.pixabay.com/photo/2015/09/30/16/36/gin-980107_1280.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Ron",
+      "tipo": "Licor",
+      "alcohol": 40.0,
+      "descripcion": "Destilado de la caña de azúcar.",
+      "precio": 22.0,
+      "stock": 80,
+      "imagen": "https://cdn.pixabay.com/photo/2014/05/22/13/48/rum-351115_1280.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Tequila",
+      "tipo": "Licor",
+      "alcohol": 40.0,
+      "descripcion": "Licor destilado del agave.",
+      "precio": 25.0,
+      "stock": 30,
+      "imagen": "https://cdn.pixabay.com/photo/2016/06/01/14/57/tequila-1438932_1280.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Whisky",
+      "tipo": "Licor",
+      "alcohol": 40.0,
+      "descripcion": "Bebida destilada a partir de cereales.",
+      "precio": 30.0,
+      "stock": 40,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/21/14/21/whiskey-1842776_1280.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Champán",
+      "tipo": "Vino",
+      "alcohol": 12.0,
+      "descripcion": "Vino espumoso de la región de Champagne.",
+      "precio": 35.0,
+      "stock": 20,
+      "imagen": "https://cdn.pixabay.com/photo/2016/07/05/08/48/champagne-1459790_1280.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Baileys",
+      "tipo": "Licor",
+      "alcohol": 17.0,
+      "descripcion": "Licor cremoso de whisky y crema.",
+      "precio": 28.0,
+      "stock": 50,
+      "imagen": "https://cdn.pixabay.com/photo/2017/09/06/18/36/bottle-2781096_1280.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Cider",
+      "tipo": "Cerveza",
+      "alcohol": 5.0,
+      "descripcion": "Bebida fermentada de manzana.",
+      "precio": 6.0,
+      "stock": 90,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/26/cider-1851466_1280.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Aperol Spritz",
+      "tipo": "Cóctel",
+      "alcohol": 11.0,
+      "descripcion": "Cóctel refrescante con Aperol y prosecco.",
+      "precio": 10.0,
+      "stock": 50,
+      "imagen": "https://cdn.pixabay.com/photo/2016/09/16/02/01/apero-1582381_1280.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Margarita",
+      "tipo": "Cóctel",
+      "alcohol": 15.0,
+      "descripcion": "Cóctel clásico de tequila, limón y licor de naranja.",
+      "precio": 12.0,
+      "stock": 40,
+      "imagen": "https://cdn.pixabay.com/photo/2015/05/14/19/45/margarita-720038_1280.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "Pina Colada",
+      "tipo": "Cóctel",
+      "alcohol": 12.0,
+      "descripcion": "Cóctel tropical de ron, piña y crema de coco.",
+      "precio": 10.0,
+      "stock": 45,
+      "imagen": "https://cdn.pixabay.com/photo/2016/03/11/16/24/cocktail-1253457_1280.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "Bloody Mary",
+      "tipo": "Cóctel",
+      "alcohol": 12.0,
+      "descripcion": "Cóctel de vodka, tomate y especias.",
+      "precio": 11.0,
+      "stock": 30,
+      "imagen": "https://cdn.pixabay.com/photo/2016/03/11/16/29/cocktail-1253459_1280.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "Mai Tai",
+      "tipo": "Cóctel",
+      "alcohol": 14.0,
+      "descripcion": "Cóctel tropical a base de ron y frutas.",
+      "precio": 12.0,
+      "stock": 35,
+      "imagen": "https://cdn.pixabay.com/photo/2016/03/11/16/29/cocktail-1253458_1280.jpg"
+    },
+    {
+      "id": 16,
+      "nombre": "Negroni",
+      "tipo": "Cóctel",
+      "alcohol": 24.0,
+      "descripcion": "Cóctel a base de ginebra, vermut y Campari.",
+      "precio": 15.0,
+      "stock": 25,
+      "imagen": "https://cdn.pixabay.com/photo/2016/03/11/16/31/cocktail-1253461_1280.jpg"
+    },
+    {
+      "id": 17,
+      "nombre": "Cosmopolitan",
+      "tipo": "Cóctel",
+      "alcohol": 14.0,
+      "descripcion": "Cóctel a base de vodka, triple sec y limón.",
+      "precio": 12.0,
+      "stock": 50,
+      "imagen": "https://cdn.pixabay.com/photo/2016/03/11/16/25/cocktail-1253453_1280.jpg"
+    },
+    {
+      "id": 18,
+      "nombre": "Gin Tonic",
+      "tipo": "Cóctel",
+      "alcohol": 12.0,
+      "descripcion": "Cóctel refrescante de ginebra y agua tónica.",
+      "precio": 10.0,
+      "stock": 60,
+      "imagen": "https://cdn.pixabay.com/photo/2016/03/11/16/29/cocktail-1253460_1280.jpg"
+    },
+    {
+      "id": 19,
+      "nombre": "Sangría",
+      "tipo": "Cóctel",
+      "alcohol": 9.0,
+      "descripcion": "Bebida española a base de vino y frutas.",
+      "precio": 8.0,
+      "stock": 40,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/31/sangria-1851468_1280.jpg"
+    },
+    {
+      "id": 20,
+      "nombre": "Cuba Libre",
+      "tipo": "Cóctel",
+      "alcohol": 10.0,
+      "descripcion": "Cóctel de ron con cola y limón.",
+      "precio": 9.0,
+      "stock": 70,
+      "imagen": "https://cdn.pixabay.com/photo/2016/09/12/10/24/cuba-libre-1581361_1280.jpg"
+    },
+    {
+      "id": 21,
+      "nombre": "Martini",
+      "tipo": "Cóctel",
+      "alcohol": 15.0,
+      "descripcion": "Cóctel clásico de ginebra y vermut.",
+      "precio": 12.0,
+      "stock": 50,
+      "imagen": "https://cdn.pixabay.com/photo/2017/11/09/06/09/martini-2921637_1280.jpg"
+    },
+    {
+      "id": 22,
+      "nombre": "Aguardiente",
+      "tipo": "Destilado",
+      "alcohol": 40.0,
+      "descripcion": "Bebida alcohólica fuerte de origen variado.",
+      "precio": 15.0,
+      "stock": 30,
+      "imagen": "https://cdn.pixabay.com/photo/2016/06/04/19/18/aguardiente-1438125_1280.jpg"
+    },
+    {
+      "id": 23,
+      "nombre": "Riesling",
+      "tipo": "Vino",
+      "alcohol": 8.5,
+      "descripcion": "Vino blanco aromático y dulce.",
+      "precio": 12.0,
+      "stock": 65,
+      "imagen": "https://cdn.pixabay.com/photo/2016/06/02/18/44/riesling-1436420_1280.jpg"
+    },
+    {
+      "id": 24,
+      "nombre": "Chardonnay",
+      "tipo": "Vino",
+      "alcohol": 13.0,
+      "descripcion": "Vino blanco seco, muy popular en todo el mundo.",
+      "precio": 12.0,
+      "stock": 70,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/14/chardonnay-1851436_1280.jpg"
+    },
+    {
+      "id": 25,
+      "nombre": "Cabernet Sauvignon",
+      "tipo": "Vino",
+      "alcohol": 14.0,
+      "descripcion": "Vino tinto robusto y con cuerpo.",
+      "precio": 15.0,
+      "stock": 60,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/27/cabernet-sauvignon-1851465_1280.jpg"
+    },
+    {
+      "id": 26,
+      "nombre": "Merlot",
+      "tipo": "Vino",
+      "alcohol": 13.5,
+      "descripcion": "Vino tinto suave y afrutado.",
+      "precio": 14.0,
+      "stock": 50,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/12/merlot-1851435_1280.jpg"
+    },
+    {
+      "id": 27,
+      "nombre": "Zinfandel",
+      "tipo": "Vino",
+      "alcohol": 14.0,
+      "descripcion": "Vino tinto afrutado originario de California.",
+      "precio": 16.0,
+      "stock": 40,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/23/zinfandel-1851452_1280.jpg"
+    },
+    {
+      "id": 28,
+      "nombre": "Shiraz",
+      "tipo": "Vino",
+      "alcohol": 14.5,
+      "descripcion": "Vino tinto con un perfil especiado y afrutado.",
+      "precio": 18.0,
+      "stock": 30,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/24/shiraz-1851453_1280.jpg"
+    },
+    {
+      "id": 29,
+      "nombre": "Prosecco",
+      "tipo": "Vino",
+      "alcohol": 11.0,
+      "descripcion": "Vino espumoso italiano, ideal para celebraciones.",
+      "precio": 15.0,
+      "stock": 55,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/14/prosecco-1851436_1280.jpg"
+    },
+    {
+      "id": 30,
+      "nombre": "Sake",
+      "tipo": "Licor",
+      "alcohol": 15.0,
+      "descripcion": "Licor de arroz japonés.",
+      "precio": 20.0,
+      "stock": 25,
+      "imagen": "https://cdn.pixabay.com/photo/2016/11/23/14/11/sake-1851459_1280.jpg"
+   
+    }
+  ]
+}
