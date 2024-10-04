@@ -3,11 +3,15 @@ header{
     height: 100px;
     display: flex;
     align-items: center;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(14, 21, 29);
 }
-header h1{
-    font-size: 40px;
-    width: 20%;
+header .logo{
+    text-decoration: none;
+    color: rgb(235, 233, 233);
+    width: 35%;
+}
+header .logo h1{
+    font-size: 30px;
     margin-left: 200px;
     text-align: center;
 }
@@ -19,7 +23,8 @@ header nav{
 }
 header nav div {
     width: auto;
-    border: 1px solid rgba(160, 160, 160, 0.747);
+    border: 1px solid rgba(194, 192, 192, 0.747);
+    background-color: rgb(236, 234, 234);
     border-radius: 10px;
     margin-left: 100px;
 }
@@ -30,16 +35,16 @@ header nav div input{
     border-radius: 10px;
     padding: 10px;
     outline: none;
+    background-color: rgb(238, 233, 233);
 }
 header nav div button{
     height: 43px;
     width: 45px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid gray;
     cursor: pointer;
 }
 header nav ul{
-
     width: 20%;
     margin-left: 120px;
     display: flex;
@@ -48,8 +53,8 @@ header nav ul{
 header nav ul li{
     width: 100%;
 }
-header nav ul li a{
+header nav ul li .link{
     text-decoration: none;
-    color: rgb(71, 71, 71);
+    color: rgb(233, 228, 228);
     font-size: 18px;
 }

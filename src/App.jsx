@@ -1,11 +1,24 @@
 import './App.css'
 import Header from './component/header/Header.jsx'
+import Cuenta from './component/main/cuenta/Cuenta.jsx'
+import Carrito from './component/main/cuenta/Carrito.jsx'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <Header/>
+      <BrowserRouter>
+
+        <Header />
+
+        <Routes>
+          <Route path='/Cuenta' element = {<Cuenta/>}/> 
+          <Route path='/Carrito' element = {<Carrito/>}/>
+        </Routes>
+
+      </BrowserRouter>
     </>
   )
 }

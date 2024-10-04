@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react' ;
 import productos from '../../back/dataBack.json' ; 
+
+import { Link } from 'react-router-dom';
 import './Header.css' ;
 
 
@@ -14,7 +16,7 @@ export default function Header() {
     return(
         <>
         <header>
-            <h1>logo</h1>
+            <Link className='logo' to = "/"><h1>Drunk in <br /> the House</h1></Link>
             <nav>
                 <div>
                     <input type="text" placeholder="Buscar producto"/>
@@ -22,12 +24,12 @@ export default function Header() {
                 
                 </div>
                 <ul>
-                    <li><a href=""> <i className="bi bi-person-circle"> Mi cuenta</i></a></li>
-                    <li><a href=""><i className="bi bi-cart"></i></a></li>
+                    <li><Link className='link' to="/Cuenta"> <i className="bi bi-person-circle"> Mi cuenta</i></Link></li>
+                    <li><Link className='link' to="/Carrito"><i className="bi bi-cart"></i></Link></li>
                 </ul>
             </nav>
         </header>
-        <ul>
+        {/* <ul>
             {
                 data.map((p, i)=> 
                 <div key={i}>
@@ -36,7 +38,7 @@ export default function Header() {
                 </div>
                 )
             }
-        </ul>
+        </ul> */}
         </>
     )
 }

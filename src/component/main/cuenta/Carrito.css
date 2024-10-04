@@ -1,0 +1,18 @@
+.carrito{
+    width: 100%;
+    height: 89vh;
+    background-color: aliceblue;
+}
+.carrito .contenedor{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+.carrito .contenedor h1{
+    font-size: 35px;
+    padding-top: 50px;
+}
+.carrito .contenedor div{
+    width: 100%;
+    height: auto;
+}
