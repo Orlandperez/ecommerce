@@ -5,6 +5,7 @@ import Carrito from './component/main/cuenta/Carrito.jsx'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
+
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
 
         <Routes>
+      
           <Route path='/Cuenta' element = {<Cuenta/>}/> 
           <Route path='/Carrito' element = {<Carrito/>}/>
         </Routes>
