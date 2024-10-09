@@ -1,4 +1,5 @@
 import './Cuenta.css'
+import './estrellas.css'
 import { Link } from 'react-router-dom'
 
 export default function Cuenta() {
@@ -23,6 +24,22 @@ export default function Cuenta() {
                 <Link className='cuenta' to="">Iniciar sesion</Link> 
                 <Link className='cuenta' to="">Crear cuenta</Link>
             </div>
+
+
+
+            
+            {/* estrellas */}
+            <div class="fondo">
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span> 
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+            </div> 
         </section>
         </>
     )
