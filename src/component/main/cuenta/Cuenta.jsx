@@ -3,6 +3,8 @@ import './estrellas.css'
 import { Link } from 'react-router-dom'
 
 export const Cuenta = () => {
+
+
     return(
         <>
         <section className='miCuenta'>

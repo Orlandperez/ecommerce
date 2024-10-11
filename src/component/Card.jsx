@@ -5,7 +5,7 @@ export const Card = (producto ) => {
                 <h3>{producto.errorMsj}</h3>
             ) : (
                 <>
-                    {producto.nombre ? (
+                    {producto.nombre  ? (
                         <div>
                             <h3>{producto.nombre}</h3>
                             <img src={producto.imagen} alt={producto.nombre} />
@@ -14,6 +14,7 @@ export const Card = (producto ) => {
                                 <p>Nivel de alcohol: {producto.alcohol}</p>
                                 <p>${producto.precio}.-</p>
                             </div>
+                            <button>Comprar</button>
                         </div>
                     ) : (
                         <h3>Inicia una búsqueda</h3>
