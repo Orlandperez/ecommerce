@@ -1,0 +1,41 @@
+.card{
+    width: 34%;
+    height: 35px;
+    background-color: white;
+    position: fixed;
+    top: 9%;
+    left: 48.2%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.card .card-contenedor{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.card .card-contenedor div img{
+    width: 150px;
+    height: 150px;
+}
+.card .card-contenedor div p{
+    font-size: 18px;
+}
+.card .card-contenedor div button{
+    width: 180px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.card .card-contenedor div button:hover{
+    background-color: rgb(14, 21, 29);
+    color: white;
+}

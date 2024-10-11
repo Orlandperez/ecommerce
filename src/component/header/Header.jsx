@@ -33,7 +33,7 @@ export const Header = () =>  {
     return(
         <>
         <header>
-            <Link className='logo'><h1>Drunk in <br /> the House</h1></Link>
+            <Link className='logo' to={"/"}><h1>Drunk in <br /> the House</h1></Link>
             <nav>
                 <div>
                     <input type="text" placeholder="Buscar producto" onChange={(e)=> setValue(e.target.value)}/>
