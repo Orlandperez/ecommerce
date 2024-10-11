@@ -60,3 +60,14 @@ header nav ul li .link{
     color: rgb(233, 228, 228);
     font-size: 18px;
 }
+header .counter-cart{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 0, 0);
+    background: #ffffff;
+    width: 20px;
+    border-radius: 15px;
+    text-align: center;
+    top: 29px;
+    right: 89px;
+}

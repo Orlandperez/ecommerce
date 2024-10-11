@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react"
 import data from "../../../back/dataBack.json"
 import anuncio from "../../../assets/anuncio.png"
-import Lista from "./Lista.jsx";
+import {Lista} from "./Lista.jsx";
 
 import "./Productos.css"
 
-const itemProductos = () => {
+export const Productos = () => {
 
     const [productos, setProductos] = useState([]);
 
     const pedirProductos = () => {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
             resolve(data.bebidas)
         })
     }
@@ -32,5 +32,3 @@ const itemProductos = () => {
         </section>
     )
 };
-
-export default itemProductos

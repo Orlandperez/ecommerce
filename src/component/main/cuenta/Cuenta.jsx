@@ -2,7 +2,7 @@ import './Cuenta.css'
 import './estrellas.css'
 import { Link } from 'react-router-dom'
 
-export default function Cuenta() {
+export const Cuenta = () => {
     return(
         <>
         <section className='miCuenta'>
@@ -29,16 +29,16 @@ export default function Cuenta() {
 
             
             {/* estrellas */}
-            <div class="fondo">
-                <span class="estrellas"></span>
-                <span class="estrellas"></span>
-                <span class="estrellas"></span>
-                <span class="estrellas"></span>
-                <span class="estrellas"></span> 
-                <span class="estrellas"></span>
-                <span class="estrellas"></span>
-                <span class="estrellas"></span>
-                <span class="estrellas"></span>
+            <div className="fondo">
+                <span className="estrellas"></span>
+                <span className="estrellas"></span>
+                <span className="estrellas"></span>
+                <span className="estrellas"></span>
+                <span className="estrellas"></span> 
+                <span className="estrellas"></span>
+                <span className="estrellas"></span>
+                <span className="estrellas"></span>
+                <span className="estrellas"></span>
             </div> 
         </section>
         </>

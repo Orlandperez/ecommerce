@@ -6,7 +6,7 @@ import beb from '../../back/dataBack.json'
 import { HandleData } from '../../back/helper/searchProducr';
 import { Card } from '../Card';
 
-export default function Header() {
+export const Header = () =>  {
     
     const [value, setValue] = useState('');
     const [result, setResult] = useState(null);
@@ -20,7 +20,7 @@ export default function Header() {
                 setResult(foundData);
             }
         } else {
-            setResult(null); // O manejar el caso en que value esté vacío
+            setResult(null); 
         }
     }, [value]);
 
@@ -36,6 +36,7 @@ export default function Header() {
                 </div>
                 <ul>
                     <li><Link className='link' to="/Cuenta"> <i className="bi bi-person-circle"> Mi cuenta</i></Link></li>
+                    <span className='counter-cart'>{}</span>
                     <li><Link className='link' to="/Carrito"><i className="bi bi-cart"></i></Link></li>
                 </ul>
             </nav>
