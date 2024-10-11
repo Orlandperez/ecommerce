@@ -1,16 +1,17 @@
-//import Carrito from '../cuenta/Carrito';
+
 import { useState } from 'react'
 import './Lista.css'
-//import { useNavigate } from 'react-router-dom'
+
 
 export const Lista = ({productos}) => {
 
     const [producAdd, setProdAdd] = useState([])
-    
-const AddToCart = (prod)=>{
+    const [count , setCount] = useState(0) ;
 
+const AddToCart = (prod)=>{
+    setCount(count+1)
     setProdAdd((prev)=> [...prev, prod]) ;
-    localStorage.setItem('added', true)
+    localStorage.setItem('counter', count)
     localStorage.setItem('productos', JSON.stringify([...producAdd, prod]))
 }
 
@@ -21,7 +22,7 @@ const AddToCart = (prod)=>{
                 productos.length > 0 &&
                 productos.map((producto , index) => {
                     return (
-                        <>
+                        
                         <div className="lista"  key={index}>
                             <img src={producto.imagen} alt={producto.nombre} />
                             <h2>{producto.nombre}</h2>
@@ -32,7 +33,7 @@ const AddToCart = (prod)=>{
                             >Agregar al Carrito</button>
                         </div>
                     
-                        </>
+                        
                     )
                 })
 

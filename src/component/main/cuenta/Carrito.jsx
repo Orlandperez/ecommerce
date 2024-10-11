@@ -1,5 +1,4 @@
 
-import { Card } from '../../Card';
 import './carrito.css'
 
 
@@ -14,19 +13,20 @@ const productos = JSON.parse( localStorage.getItem('productos')) ;
                 <h1>Carrito de compras</h1>
               
                 {
-                    productos.map((p, i)=> {
-                     return(
-                        <div key={i}>
-                        <div>
-                            <img src={p.imagen}/>
-                            <p>{p.nombre}</p>
-                            <p>${p.precio}</p>
-                            
-                        </div>
-                    </div>
-                     )
-                        
-                    })
+                  productos &&
+                  productos.map((p, i)=> {
+                    return(
+                       <div key={i}>
+                       <div>
+                           <img src={p.imagen}/>
+                           <p>{p.nombre}</p>
+                           <p>${p.precio}</p>
+                           
+                       </div>
+                   </div>
+                    )
+                       
+                   })
                 }
             </div>
         </section>
