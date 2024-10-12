@@ -54,21 +54,22 @@ header nav ul{
     list-style-type: none;
 }
 header nav ul li{
-    width: 100%;
+    width: auto;
 }
 header nav ul li .link{
     text-decoration: none;
     color: rgb(233, 228, 228);
     font-size: 18px;
+    margin-left: 30px;
 }
 header .counter-cart{
-    position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 0, 0);
+    color: rgb(38, 0, 255);
     background: #ffffff;
-    width: 20px;
+    width: auto;
+    padding: 1px 5px;
+    height: 14px;
     border-radius: 15px;
     text-align: center;
-    margin-top: 29px;
-    margin-right: 14px;
+    font-size: 12.5px;
 }

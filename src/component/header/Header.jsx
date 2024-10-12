@@ -42,8 +42,9 @@ export const Header = () =>  {
                 </div>
                 <ul>
                     <li><Link className='link' to="/Cuenta"> <i className="bi bi-person-circle"> Mi cuenta</i></Link></li>
-                    <span className='counter-cart'>{cantidad}</span>
+                    
                     <li><Link className='link' to="/Carrito"><i className="bi bi-cart"></i></Link></li>
+                    <span className='counter-cart'>{cantidad}</span>
                 </ul>
             </nav>
         </header>
