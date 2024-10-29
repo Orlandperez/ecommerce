@@ -4,15 +4,35 @@
     height: auto;
     background-color: rgba(15, 53, 85, 0.925);
 }
-.producto h1{
-    font-size: 45px;
-    text-align: center;
-    padding: 50px 0;
-    color: white;
-}
 .producto .anuncio{
     width: 100%;
+    height: 690px;
 }
+.producto .filtro{
+    width: 100%;
+    color: white;
+}
+.producto .filtro h1{
+    font-size: 55px;
+    text-align: center;
+    padding: 50px 0 45px;
+}
+.producto .filtro div{
+    text-align: end;
+    padding: 0 0 50px;
+    margin-right: 285px;
+}
+.producto .filtro div label{
+    font-size: 20px;
+}
+.producto .filtro div select{
+    padding: 10px 17px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
 .producto .producto-contenedor{
     width: 72%;
     gap: 2rem;

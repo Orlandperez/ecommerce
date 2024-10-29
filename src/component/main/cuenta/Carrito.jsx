@@ -17,17 +17,21 @@ const productos = JSON.parse( localStorage.getItem('productos')) ;
                   productos.map((p, i)=> {
                     return(
                        <div key={i}>
-                       <div>
-                           <img src={p.imagen}/>
-                           <p>{p.nombre}</p>
-                           <p>${p.precio}</p>
-                           
+                       <div  className='carrito-producto'>
+                            <img src={p.imagen}/>
+                            <div>
+                                <p>{p.nombre}</p>
+                                <p>{p.descripcion}</p>
+                                <p>${p.precio}</p> 
+                            </div>
                        </div>
                    </div>
                     )
                        
                    })
                 }
+                <button className='boton1'>Confirmar</button>
+                <button className='boton2'>Eliminar productos</button>
             </div>
         </section>
 

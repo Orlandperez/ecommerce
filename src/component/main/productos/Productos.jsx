@@ -25,7 +25,21 @@ export const Productos = () => {
     return (
         <section className="producto">
             <img className="anuncio" src={anuncio} alt="anuncio" />
-            <h1>Productos</h1>
+            <div className="filtro">
+                <h1>Productos</h1>
+                <div>
+                    <label>Filtro de bebidas: </label>
+                    <select>
+                        <option value="">Precio de: Mayor a Menor</option>
+                        <option value="">Precio de: Menor a Mayor</option>
+                        <option value="">Alcohol: 0%</option>
+                        <option value="">Alcohol: 15%</option>
+                        <option value="">Alcohol: 50%</option>
+                        <option value="">Alcohol: 100%</option>
+                    </select>
+                </div>
+            </div>
+            
             <div className="producto-contenedor">
                 <Lista productos = {productos}/>
             </div>

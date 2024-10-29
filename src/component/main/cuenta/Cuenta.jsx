@@ -19,7 +19,7 @@ export const Cuenta = () => {
                     <div>
                         <h2>Mis compras</h2>
                         <p>Sigue el estado de tus compras  y<br /> consulta tus facturas</p>
-                        <Link className='link' to="">Ir a mis compras</Link>
+                        <Link className='link' to="/Carrito">Ir a mis compras</Link>
                     </div>
                 </div>
                 
