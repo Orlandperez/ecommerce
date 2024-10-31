@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './Lista.css'
 
 
+// eslint-disable-next-line react/prop-types
 export const Lista = ({productos}) => {
 
     const [producAdd, setProdAdd] = useState([])

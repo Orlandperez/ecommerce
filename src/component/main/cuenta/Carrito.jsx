@@ -1,40 +1,62 @@
-
-import './carrito.css'
-
+import { useState, useEffect } from 'react';
+import './carrito.css';
+import { Spinner } from '../../spinner';
+import { TotalCart } from '../../TotalCart';
 
 export const Carrito = () => {
-const productos = JSON.parse( localStorage.getItem('productos')) ; 
+    const [load, setLoad] = useState(false);
+    const [productos, setProductos] = useState([]);
+    const [totalProductos, setTotalProductos] = useState(0);
 
+    useEffect(() => {
+        const storedProductos = JSON.parse(localStorage.getItem('productos')) || [];
+        setProductos(storedProductos);
+        
+        const total = storedProductos.reduce((acc, p) => acc + p.precio, 0);
+        setTotalProductos(total);
+    }, []);
 
-    return(
-        <>
+    const cleanCart = () => {
+        localStorage.removeItem('productos');   
+        localStorage.setItem('counter', 0);
+        setLoad(true);
+        setTimeout(() => {
+            setLoad(false); 
+            setProductos([]); 
+            setTotalProductos(0);
+        }, 2500);
+    };
+
+    return (
         <section className='carrito'>
-            <div className='contenedor'>
+            <div className='contenedor'>        
                 <h1>Carrito de compras</h1>
-              
-                {
-                  productos &&
-                  productos.map((p, i)=> {
-                    return(
-                       <div key={i}>
-                       <div  className='carrito-producto'>
-                            <img src={p.imagen}/>
-                            <div>
-                                <p>{p.nombre}</p>
-                                <p>{p.descripcion}</p>
-                                <p>${p.precio}</p> 
-                            </div>
-                       </div>
-                   </div>
+
+                {load && !productos.length < 1 ? (
+                    <Spinner msj={'Eliminando productos...'} />
+                ) : (
+                    productos.length > 0 ? (
+                        <>
+                            {productos.map((p, i) => (
+                                <div key={i} className='carrito-producto'>
+                                    <img src={p.imagen} alt={p.nombre} />
+                                    <div>
+                                        <p>{p.nombre}</p>
+                                        <p>{p.descripcion}</p>
+                                        <p>${p.precio}</p> 
+                                    </div>
+                                </div>
+                            ))}
+                            <TotalCart total={totalProductos}/>
+                        </>
+                    ) : (
+                        <p>No hay productos en el carrito.</p>
                     )
-                       
-                   })
-                }
+                )}
+
                 <button className='boton1'>Confirmar</button>
-                <button className='boton2'>Eliminar productos</button>
+                <button className='boton2' onClick={cleanCart}>Eliminar productos</button>
             </div>
         </section>
-
-        </>
-    )
-}
+    );
+};

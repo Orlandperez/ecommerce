@@ -15,6 +15,7 @@ export const Header = () =>  {
     const count =  JSON.parse(localStorage.getItem('counter')) ;
     useEffect(()=> {
         setCantidad(cantidad+count + 1)
+        
     }, [])
 
     useEffect(() => { 
