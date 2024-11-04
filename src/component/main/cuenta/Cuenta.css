@@ -14,30 +14,6 @@
     padding: 60px 0 40px 0;
     color: white;
 }
-.miCuenta .inicio .info{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.miCuenta .inicio .info div{
-    width: 340px;
-    height: 170px;
-    background-color: rgb(243, 254, 255);
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 10px;
-    padding: 25px 10px 10px;
-    margin-bottom: 20px;
-}
-.miCuenta .inicio .info div h2{
-    margin-bottom: 10px;
-    color: black;
-}
-.miCuenta .inicio .info div p{
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: black;
-}
 .miCuenta .inicio .info div .link{
     text-decoration: none;
     font-size: 18px;

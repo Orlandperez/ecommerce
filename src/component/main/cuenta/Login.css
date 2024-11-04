@@ -1,0 +1,67 @@
+.login{
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    background-color: rgb(231, 242, 250);
+}
+.login h1{
+    font-size: 33px;  
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.login form{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.login form div{
+    margin-top: 10px;
+    height: auto;
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.login form div input{
+    width: 480px;
+    height: 40px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.login form div button{
+    width: 480px;
+    height: 40px;
+    border: 1px solid rgb(201, 201, 201);
+    background-color: rgb(42, 79, 121);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.login form div button:hover{
+    background-color: rgb(19, 60, 107);
+    color: white;
+}
+.login form div .registrarse{
+    display: inline-block;
+    width: 480px;
+    height: 42px;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid rgb(252, 252, 252);
+    background-color: rgb(23, 41, 61);
+    outline: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.login form div .registrarse:hover{
+    background-color: rgb(18, 55, 97);
+}
