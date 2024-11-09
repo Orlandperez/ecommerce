@@ -7,6 +7,7 @@ import {Login} from './component/main/cuenta/Login.jsx'
 import { Register } from './component/main/cuenta/Register.jsx'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Perfil } from './component/main/cuenta/Perfil.jsx'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/Login' element = {<Login/>}/>
           <Route path='/Register' element = {<Register/>}/>
           <Route path='/Carrito' element = {<Carrito/>}/>
+          <Route path='/Perfil' element={<Perfil/>}/>
         </Routes>
 
       </BrowserRouter>

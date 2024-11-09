@@ -2,20 +2,33 @@ import { useState, useEffect } from 'react';
 import './carrito.css';
 import { Spinner } from '../../spinner';
 import { TotalCart } from '../../TotalCart';
+import { GetUsers } from '../../../back/helper/searchProducr';
 
 export const Carrito = () => {
     const [load, setLoad] = useState(false);
     const [productos, setProductos] = useState([]);
     const [totalProductos, setTotalProductos] = useState(0);
+    const [users, setUsers] = useState([]) ; 
+
+
+
+
 
     useEffect(() => {
+        const f = async ()=> {
+            const data = await GetUsers() ; 
+            setUsers(data) ; 
+
+        }
+        f(); 
+
         const storedProductos = JSON.parse(localStorage.getItem('productos')) || [];
         setProductos(storedProductos);
         
         const total = storedProductos.reduce((acc, p) => acc + p.precio, 0);
         setTotalProductos(total);
     }, []);
-
+    console.log(users)
     const cleanCart = () => {
         localStorage.removeItem('productos');   
         localStorage.setItem('counter', 0);

@@ -12,3 +12,14 @@ export const HandleData = (arr , value) => {
     }
 
 }
+
+//prueba de api 
+
+export const GetUsers = async () => {
+    const url = "https://localhost:44369/api/User/all" ; 
+    const response = await fetch(url, {
+        method:"GET" 
+    })
+    const res  = await response.json() ; 
+    return res  ;
+}
