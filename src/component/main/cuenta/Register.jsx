@@ -27,6 +27,8 @@ export const Register = () => {
                 localStorage.setItem('usuario', JSON.stringify(usuario))
                 navigate('/Perfil')
                 return ; 
+          }else{
+            alert(response)
           }
         } catch (error) {
             console.log(error+ "\n"+response)
@@ -61,7 +63,7 @@ export const Register = () => {
                 </div>
                 <div className='register-conteiner'>
                     <div>
-                        <label htmlFor="">Edad</label><br />
+                        <label htmlFor="">Fecha de nacimiento</label><br />
                         <input type="date" required placeholder="Ingrese su fecha de nacimiento"
                         name="FECHA_NAC"
                         value={usuario.FECHA_NAC || ""}

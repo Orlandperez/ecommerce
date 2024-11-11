@@ -7,6 +7,7 @@ export const Perfil = ()=> {
         <>
         <div>
             <div>
+                
              <p>{`Te damos la bienvenida ${userJson.NOMBRE}`}</p>
                 
             </div>
