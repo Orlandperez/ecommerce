@@ -291,7 +291,7 @@
       "imagen": "https://i5-mx.walmartimages.com/gr/images/product-images/img_large/00040009635422L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
     },
     {
-      "id": 30,
+      "id": 31,
       "nombre": "Sake",
       "tipo": "Licor",
       "alcohol": 15.0,
@@ -301,7 +301,18 @@
       "imagen": "https://imgs.search.brave.com/F0LIpSmnlalR2P4bq-Ig5vLnvyQ6RjF9ov-K3hLo-0o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF83NDY0MTUt/TUxVNzQ4MjEyMTQ2/ODZfMDMyMDI0LVgu/anBn"
     },
     {
-      "id": 30,
+      
+      "id": 32,
+      "nombre": "Sake",
+      "tipo": "Licor",
+      "alcohol": 50.0,
+      "descripcion": "Licor de arroz japonés.",
+      "precio": 20.0,
+      "stock": 25,
+      "imagen": "https://imgs.search.brave.com/F0LIpSmnlalR2P4bq-Ig5vLnvyQ6RjF9ov-K3hLo-0o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF83NDY0MTUt/TUxVNzQ4MjEyMTQ2/ODZfMDMyMDI0LVgu/anBn"
+    },
+    {
+      "id": 33,
       "nombre": "Vino Tinto plus",
       "tipo": "Vino",
       "alcohol": 15.0,
