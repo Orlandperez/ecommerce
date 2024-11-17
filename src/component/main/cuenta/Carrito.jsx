@@ -58,6 +58,9 @@ export const Carrito = () => {
                                         <p>{p.descripcion}</p>
                                         <p>${p.precio}</p> 
                                     </div>
+                                    <div>
+                                        <button>eliminar</button>
+                                    </div>
                                 </div>
                             ))}
                             <TotalCart total={totalProductos}/>

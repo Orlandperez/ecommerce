@@ -38,7 +38,6 @@ export const Header = () =>  {
             <nav>
                 <div>
                     <input type="text" placeholder="Buscar producto" onChange={(e)=> setValue(e.target.value)}/>
-                    <button><i className="bi bi-search"></i></button>
                 
                 </div>
                 <ul>

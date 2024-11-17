@@ -39,14 +39,6 @@ header nav div input{
     outline: none;
     background-color: rgb(238, 233, 233);
 }
-header nav div button{
-    height: 43px;
-    width: 45px;
-    border-radius: 10px;
-    border: 1px solid gray;
-    cursor: pointer;
-    transition: .5s;
-}
 header nav ul{
     width: 20%;
     margin-left: 120px;
