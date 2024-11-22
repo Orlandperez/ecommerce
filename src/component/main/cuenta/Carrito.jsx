@@ -70,8 +70,13 @@ export const Carrito = () => {
                     )
                 )}
 
-                <button className='boton1'>Confirmar</button>
-                <button className='boton2' onClick={cleanCart}>Eliminar productos</button>
+                {
+                    productos.length > 0 && 
+                 <div>
+                       <button className='boton1'>Confirmar</button>
+                       <button className='boton2' onClick={cleanCart}>Eliminar productos</button>
+                 </div>
+                }
             </div>
         </section>
     );

@@ -2,13 +2,12 @@ import { Link, useNavigate } from 'react-router-dom'
 import './Register.css'
 import { useState } from 'react';
 import { Usuario } from '../../../back/helper/UsuarioDTO';
-import { AltaUsuario } from '../../../back/helper/AltaUsuario';
+
 
 
 export const Register = () => {
     const navigate = useNavigate() ; 
     const [usuario, setUsuario] = useState(new Usuario()) ;
-    const [response, setReposnse] = useState("")
 
     const handleDataUsuario = (e) => {
         const {name , value } = e.target
@@ -20,18 +19,19 @@ export const Register = () => {
 
     const HandlePostUser = async (e)=> {
         e.preventDefault() ; 
+        const edad = new Date().getFullYear() - new Date(usuario.FECHA_NAC).getFullYear()
+
+     
         try {
-            const res = await AltaUsuario(usuario) ;
-            setReposnse(res)
-          if(res === `Usuario ${usuario.NOMBRE} agregado correctamente`){
-                localStorage.setItem('usuario', JSON.stringify(usuario))
-                navigate('/Perfil')
-                return ; 
-          }else{
-            alert(response)
-          }
+      if(edad >= 18){
+      localStorage.setItem('usuario', JSON.stringify(usuario)) ;
+      
+      navigate('/Login')
+      }else{
+        alert(`${usuario.NOMBRE} necestias tener 18 para poder registrarte`)
+      }
         } catch (error) {
-            console.log(error+ "\n"+response)
+            console.log(error)
         }
     }
 

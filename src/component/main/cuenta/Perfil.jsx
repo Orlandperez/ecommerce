@@ -1,7 +1,7 @@
 export const Perfil = ()=> {
     const usuario = localStorage.getItem('usuario') ;
     const userJson = JSON.parse(usuario) ; 
-    console.log(userJson.NOMBRE)
+    
 
     return(
         <>
