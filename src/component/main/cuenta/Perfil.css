@@ -1,0 +1,43 @@
+.perfil{
+    background-color: rgb(243, 250, 255);
+    height: 89vh;
+    width: 100%;
+}
+.perfil h1{
+    padding: 50px 0 40px;
+    text-align: center;
+}
+.perfil .perfil-conteiner{
+    width: 30% auto;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px 15px;
+    border: 1px solid rgba(20, 66, 153, 0.925);
+    border-radius: 20px;
+    box-shadow: 0 0 0.62em 0.187em rgb(13, 84, 105);
+    animation: border-neon 3s linear infinite;
+}
+@keyframes border-neon {
+    0% {
+        border-color: rgb(90, 156, 255);
+        box-shadow: 0 0 0.62em 0.187em rgba(90, 148, 255, 0.5);
+    }
+
+    50% {
+        border-color: rgba(90, 189, 255, 0.5);
+        box-shadow: 0 0 1.25em 0.37em rgba(90, 156, 255, 0.3);
+    }
+
+    100% {
+        border-color: rgba(90, 208, 255, 0.87);
+        box-shadow: 0 0 0.625em 0.187em rgba(90, 217, 255, 0.5);
+    }
+}
+.perfil .perfil-conteiner div{
+    display: flex;
+}
+.perfil .perfil-conteiner p{
+    font-size: 18px;
+    margin-top: 12px;
+    width: 50%;
+}

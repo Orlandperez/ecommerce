@@ -1,8 +1,7 @@
 .register{
     background-color: rgb(231, 242, 250);
     width: 100%;
-    height: 100vh;
-    padding-top: 110px;
+    height: 90vh;
 }
 .register h1{
     font-size: 30px;
