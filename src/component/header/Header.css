@@ -82,6 +82,7 @@ header .counter-cart{
     }
     header nav ul{
         margin-left: 30px;
+        width: auto;
     }
 }
 @media(max-width:1130px){
@@ -90,9 +91,6 @@ header .counter-cart{
     }
     header nav div input{
         width: 450px;
-    }
-    header nav ul{
-        width: auto;
     }
 }
 @media(max-width:941px){
