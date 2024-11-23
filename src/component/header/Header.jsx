@@ -1,54 +1,73 @@
-
 import { Link } from 'react-router-dom';
-import './Header.css' ;
+import './Header.css';
 import { useEffect, useState } from 'react';
-import beb from '../../back/dataBack.json'
-import { HandleData } from '../../back/helper/searchProducr';
+import beb from '../../back/dataBack.json';
+import { Cantidad, HandleData } from '../../back/helper/searchProducr';
 import { Card } from '../Card';
 
 
-export const Header = () =>  {
 
+
+export const Header = () => {
     const [value, setValue] = useState('');
     const [result, setResult] = useState(null);
-    const [cantidad, setCantidad] = useState(0)
-    const count =  JSON.parse(localStorage.getItem('counter')) ;
+    const [cantidad, setCantidad] = useState(0);
+    const CantidadClass = new Cantidad() ;
+    const cantidadProductos = CantidadClass.getCantidad()
+    const usuarioSesionStorage = sessionStorage.getItem('user');
+    const userCurrent = usuarioSesionStorage ? JSON.parse(JSON.parse(usuarioSesionStorage)) : null;
+
     useEffect(()=> {
-        setCantidad(cantidad+count + 1)
-        
+       const counter = localStorage.getItem('counter') ; 
+       console.log(counter)
+       setCantidad(counter)
     }, [])
 
-    useEffect(() => { 
+
+    useEffect(() => {
         if (value.trim() !== '') {
             const foundData = HandleData(beb.bebidas, value);
-            if(foundData.errorMsj){
-                setResult(foundData);
-            }else{
-                setResult(foundData);
-            }
+            setResult(foundData);
         } else {
-            setResult(null); 
+            setResult(null);
         }
     }, [value]);
 
-    return(
+    return (
         <>
-        <header>
-            <Link className='logo' to={"/"}><h1>Drunk in <br /> the House</h1></Link>
-            <nav>
-                <div>
-                    <input type="text" placeholder="Buscar producto" onChange={(e)=> setValue(e.target.value)}/>
-                
-                </div>
-                <ul>
-                    <li><Link className='link' to="/Cuenta"> <i className="bi bi-person-circle"> Mi cuenta</i></Link></li>
-                    
-                    <li><Link className='link' to="/Carrito"><i className="bi bi-cart"></i></Link></li>
-                    <span className='counter-cart'>{cantidad}</span>
-                </ul>
-            </nav>
-        </header>
-            <Card {...result} cb/>
+            <header>
+                <Link className='logo' to={"/"}>
+                    <h1>Drunk in <br /> the House</h1>
+                </Link>
+                <nav>
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="Buscar producto"
+                            onChange={(e) => setValue(e.target.value)}
+                        />
+                    </div>
+                    <ul>
+                        <li>
+                            <Link className='link' to="/Cuenta">
+                                <i className="bi bi-person-circle">
+                                    {userCurrent ? `${userCurrent.NOMBRE} ${userCurrent.APELLIDO}` : 'Iniciar Sesion'}
+                                </i>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className='link' to={userCurrent ? '/Carrito' : '/'} onClick={()=> {
+                                !userCurrent && alert('inicia sesion para ver el carrito') 
+                            }}>
+                                <i className="bi bi-cart"></i>
+                            </Link>
+                        </li>
+                        <span className='counter-cart'>{cantidad}</span>
+                    </ul>
+                </nav>
+            </header>
+            <Card {...result} cb />
         </>
-    )
-}
+    );
+};
+;

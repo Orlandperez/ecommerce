@@ -21,13 +21,15 @@ setUsuarioLogin({
 }
 
 
-const usuario = localStorage.getItem('usuario') ; 
+const usuario = localStorage.getItem('usuarioRegistrado') ; 
 const loginUser = (e)=> {
     e.preventDefault(); 
     if(usuario){
         const parseUser = JSON.parse(usuario)
         if(parseUser.EMAIL === usuarioLogin.mail && parseUser.PASSWORD === usuarioLogin.password){
-            navigate('/perfil')
+            navigate('/cuenta')
+            sessionStorage.setItem('user', JSON.stringify(usuario))
+                location.reload();
         }else{
             if(parseUser.EMAIL !== usuarioLogin.mail){
                 alert('el correo es incorrecto')
@@ -36,6 +38,8 @@ const loginUser = (e)=> {
                 alert('la contraseña es incorrecta')
             }
         }
+    }else{
+        alert('usuario no registrado 😔')
     }
 }
     return (

@@ -11,7 +11,7 @@
 .miCuenta .inicio h1{
     font-size: 35px;
     padding: 60px 0 40px 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .miCuenta .inicio .info div .link{
     text-decoration: none;
@@ -48,4 +48,32 @@
     background-color: rgb(14, 21, 29);
     color: white;
     border: none;
+}
+.containerActions{
+    display: flex;
+    background: aliceblue;
+    width: 50vw;
+    height: 150px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.containerActions button{
+    background-color: rgb(85, 14, 49);
+   padding: .4rem;
+   border-radius: 5px;
+   transition: .3s;
+   &:hover{
+    scale: 1.1;
+    background-color:rgb(139, 201, 139) ;
+
+}
+}
+button .cuenta{
+    color: white;
+    list-style-type: none;
+    
 }

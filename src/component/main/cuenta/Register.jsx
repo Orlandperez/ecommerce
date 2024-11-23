@@ -1,13 +1,13 @@
 import { Link, useNavigate } from 'react-router-dom'
 import './Register.css'
 import { useState } from 'react';
-import { Usuario } from '../../../back/helper/UsuarioDTO';
+import { UsuarioDTO } from '../../../back/helper/UsuarioDTO';
 
 
 
 export const Register = () => {
     const navigate = useNavigate() ; 
-    const [usuario, setUsuario] = useState(new Usuario()) ;
+    const [usuario, setUsuario] = useState(new UsuarioDTO()) ;
 
     const handleDataUsuario = (e) => {
         const {name , value } = e.target
@@ -24,7 +24,7 @@ export const Register = () => {
      
         try {
       if(edad >= 18){
-      localStorage.setItem('usuario', JSON.stringify(usuario)) ;
+      localStorage.setItem('usuarioRegistrado', JSON.stringify(usuario)) ;
       
       navigate('/Login')
       }else{

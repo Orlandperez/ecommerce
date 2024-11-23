@@ -1,3 +1,5 @@
+
+
 export const HandleData = (arr , value) => {
 
     try {
@@ -23,3 +25,26 @@ export const GetUsers = async () => {
     const res  = await response.json() ; 
     return res  ;
 }
+
+//obtener cantidad de productos en el carrito
+export class Cantidad {
+    static instance = null;
+    cantidad = 0;
+
+    constructor() {
+        if (Cantidad.instance) {
+            return Cantidad.instance;
+        }
+        Cantidad.instance = this;
+    }
+
+    setCantidad(cant) {
+        this.cantidad += cant;
+    }
+
+    getCantidad() {
+        console.log('cantidad ' + this.cantidad);
+        return this.cantidad;
+    }
+}
+
