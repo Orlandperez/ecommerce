@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './Cuenta.css'
 import './estrellas.css'
-import './Perfil.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { Spinner } from '../../spinner'
 
@@ -30,7 +29,6 @@ return (
             user ? (
                 <section className='miCuenta'>
                     <div className='inicio'>
-                        <h1>Mi cuenta</h1>
                         {currentUser && currentUser.NOMBRE ? (
                             <div className="perfil">
                                 <h1 className='titleUser'>{`Te damos la bienvenida ${currentUser.NOMBRE}!!`}</h1>
@@ -46,8 +44,11 @@ return (
                                     </div>
                                     <p>{`Fecha de nacimiento: ${currentUser.FECHA_NAC}`}</p>
                                 </div>
-                                <button onClick={closeSesion}>Cerrar Sesión</button>
-                                <button onClick={buy} >Ir a comprar</button>
+                                <div className='boton'>
+                                    <button onClick={closeSesion}>Cerrar Sesión</button> <br />
+                                    <button onClick={buy} >Ir a comprar</button>
+                                </div>
+                                
                             </div>
                         ) : (
                             <div>
@@ -58,8 +59,11 @@ return (
                 </section>
             ) : (
                 <div className='containerActions'>
-                  <button>  <Link className='cuenta' to="/Login">Iniciar Sesión</Link></button>
-                   <button> <Link className='cuenta' to="/Register">Crear Cuenta</Link></button>
+                    <h1>Hola!!</h1>
+                    <div>
+                        <button>  <Link className='cuenta' to="/Login">Iniciar Sesión</Link></button> <br />
+                        <button> <Link className='cuenta' to="/Register">Crear Cuenta</Link></button>
+                    </div>
                 </div>
             )
         ) : (

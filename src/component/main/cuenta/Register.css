@@ -6,20 +6,25 @@
 .register h1{
     font-size: 30px;
     padding: 60px 0 20px;
-    width: 50%;
+    width: 100%;
+    text-align: center;
     margin: 0 auto;
 }
 .register form{
-    width: 100%;
+    width: auto;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .register form .register-conteiner{
-    width: 50%;
-    margin: 0 auto;
+    width: auto;
     display: flex;
+    gap: 1rem;
 }
 .register form .register-conteiner div{
-    width: 40%;
+    width: auto;
     height: auto;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -38,7 +43,6 @@
     background-color: aliceblue;
     width: 20%;
     height: auto;
-    margin: 0 auto;
     margin-top: 15px;
 }
 .register form .register-conteiner2 button{
@@ -70,4 +74,10 @@
 }
 .register form .register-conteiner2 .ingresar:hover{
     background-color: rgb(18, 55, 97);
+}
+
+@media(max-width:878px){
+    .register form .register-conteiner div input{
+        width: 250px;
+    }
 }

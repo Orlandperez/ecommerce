@@ -1,6 +1,7 @@
 .card{
-    width: 34%;
+    width: auto;
     height: 35px;
+    padding: 10px;
     background-color: white;
     position: fixed;
     top: 9%;
